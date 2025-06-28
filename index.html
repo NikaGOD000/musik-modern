@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MusikKeren</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🎵 MusikKeren</h1>
+  </header>
+
+  <main>
+    <section class="playlist">
+      <div class="song-card" onclick="playSong('music/song1.mp3', 'Song One')">
+        <img src="img/cover1.jpg" alt="Cover">
+        <h3>Song One</h3>
+      </div>
+      <div class="song-card" onclick="playSong('music/song2.mp3', 'Song Two')">
+        <img src="img/cover2.jpg" alt="Cover">
+        <h3>Song Two</h3>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div id="player">
+      <p id="now-playing">Tidak ada lagu diputar</p>
+      <audio id="audio" controls></audio>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
